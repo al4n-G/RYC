@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RYC</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+ 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <script src=" https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript"> emailjs.init('iLqEIKb1Tnh07ePVg') </script>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">
+            <img src="../imagen/LogoRYC.png" >
+        </a>
+        <nav class="menu">
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../servicios/Servicios.html">Servicio</a></li>
+              <li><a href="../contacta/Contacta.html">Contacta</a></li>
+          </ul>
+        </nav>
+       
+      </header>
+  
+      <section class="section-main">
+
+        <section class="container1"> 
+
+          
+            <span class="d">Contactanos</span>
+            <form  id="form" class="form">
+                <div class="columnC">
+                    <div class="input-box">
+                        <label for="from_name">Nombre</label>
+                        <input type="text" placeholder="Escribe el nombre" required name="from_name" id="from_name" /> 
+                      </div>      
+                      
+                      <div class="input-box">
+                        <label for="correo">E-Mail</label>
+                        <input type="email"  name="correo" id="correo" placeholder="Escribe el correo"required/>
+                      </div>
+                </div>
+                <div class="columnC">
+                    <div class="input-box">
+                        <label for="Asunto">Asunto</label>
+                        <input type="text" placeholder="Asunto" name="Asunto" id="Asunto"/>
+                      </div>
+                      <div class="input-box">
+                        <label for="cel">Telefono</label>
+                        <input
+                          type="tel" name="cel" id="cel" placeholder="Escribe el numero" />
+                          
+                      </div>
+                </div>
+               
+                <div class="input-box">
+                    <label>Mensaje </label>
+                    <textarea  name="message" id="message" class="campo" placeholder="Escribe Mensaje...." ></textarea>
+                  </div>
+                  <input class="btn-EV" type="submit"  id="button" value="Enviar">
+            </form> 
+          </section>
+        <div class="ho">
+          
+          <h2>PUEDES CONTACTARNOS</h2>
+          <br>
+          <br>
+          <i class="fa-regular fa-envelope fa-beat" style="color: #3d2c7d;"></i> <label for="">E-MAIL</label>
+          <p>reclutamiento1@rycefectivo.com</p>
+          <br>
+          <br>
+          <i class="fa-solid fa-location-dot fa-beat" style="color: #3d2c7d;"></i> <label for="">UBICADOS</label>
+          <p>Apodaca Nuevo León</p>
+          <br>
+          <br>
+          <i class="fa-solid fa-mobile-screen-button fa-beat" style="color: #3d2c7d;"></i> <label for="">LLÁMENOS</label>
+          <a href="https://wa.link/pj9f8k"><P>81 2466 5789</P></a>
+          <br>
+          <br>
+         <a href="https://wa.link/pj9f8k"> <img src="../imagen/Whatsapp_icon-icons.com_66931.ico" width="45px" ></a>
+         <a href="mailto:reclutamiento1@rycefectivo.com?cc=Solicito información de los servicios "> <img src="../imagen/gmail_new_logo_icon_159149.ico" width="45px" ></a>
+          
+
+        </div>
+      </section>
+  
+      <section class="section-two">
+    <div class="email">
+        <div  class="column-2">
+         <div class="column-3">
+            <i class="fa-solid fa-location-dot" style="color: #0032a8;"></i>
+            <p>Apodaca Nuevo León </p>
+         </div>
+         <div class="column-3">
+            <i class="fa-solid fa-phone" style="color: #0032a8;"></i>
+            <a href="https://wa.link/pj9f8k"><p>81 2466 5789</p></a>
+        </div>     
+        <div>
+            <p>¡Contáctanos hoy!</p>
+            <p>reclutamiento1@rycefectivo.com</p>
+        </div>
+    </div>
+    </div>        
+   
+      </section>
+      <script type="text/javascript">
+      //javascript for navigation bar effect on scroll
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle('down', window.scrollY > 0);
+  
+          //change logo
+          var logo = document.querySelector(".brand img");
+          if (window.scrollY>0) {
+              logo.setAttribute('src', '../imagen/LogoRYC.png');
+          }else{
+              logo.setAttribute('src', '../imagen/LogoRYC.png');
+          }
+  
+      });
+  
+      //javascript for responsive navigation sidebar menu
+      var menu = document.querySelector('.menu');
+      var menuBtn = document.querySelector('.menu-btn');
+      var closeBtn = document.querySelector('.close-btn');
+  
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+      });
+  
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+      });
+      </script> 
+  
+  
+
+
+<script src="EV.js"></script>
+</body>
+</html>

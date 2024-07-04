@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RYC</title>
+    <link rel="stylesheet" type="text/css" href="style-cotiza.css">
+ 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" href="../imagen/logo-min.ico" />
+                <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+                  
+                  <script type="text/javascript">
+                    emailjs.init('Pw_fWmcYdUfQavP8P')
+                  </script>
+
+                            
+                  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </head>
+<body>
+    <header>
+        <a href="#" class="brand">
+            <img src="../imagen/LogoRYC.png" >
+        </a>
+        <nav class="menu">
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li><a href="../index.html#Servicio">Servicio</a></li>
+              <li><a href="../index.html#contacta">Contacta</a></li>
+          </ul>
+        </nav>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+      </header>
+  
+      <section class="section-main">
+        <section class="container1">
+            <span class="d">Déjanos tu datos y te contactaremos</span>
+            <form  id="form" class="form" >
+                <div class="columnC">
+                    <div class="input-box">
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Escribe el nombre" required id="from_name" name="from_name"/>  
+                        <input type="hidden" name="Asunto" id="Asunto" value=" me gustaria informacion sobre empleos">
+                      </div>      
+                      
+                      <div class="input-box">
+                        <label>Apellido paterno</label>
+                        <input
+                        type="text" name="Apaellido1" id="Apaellido1"placeholder="Escribe Apellido" required/>
+                      </div>
+                      <div class="input-box">
+                        <label>Apellido materno</label>
+                        <input
+                        type="text" name="Apaellido2" id="Apaellido2"placeholder="Escribe Apellido" required/>
+                      </div>
+                </div>
+
+                <div class="columnC"> 
+                    <div class="input-box">
+                        <label>E-mail</label>
+                        <input
+                          type="email"
+                          placeholder="Escribe el E-mail"
+                          name="correo"
+                           id="correo"
+                        />
+                      </div> 
+
+                    <div class="input-box">
+                      <label>Telefono celular</label>
+                      <input
+                        type="tel"
+                        placeholder="Escribe el celular"
+                        name="cel"
+                         id="cel"
+                      />
+                    </div>
+              </div>
+
+                <div class="columnC">   
+                    <div class="input-box">
+                        <label>Escolaridad</label>
+                        <div class="select-box">
+                          <select name="Estados">
+                            <option hidden>--Selecciona Estado--</option>
+                            <option value="Aguascalientes">--Aguascalientes--</option>
+                            <option value="Baja California">--Baja California--</option>
+                            <option value="Baja California Sur">--Baja California Sur --</option>
+                            <option value="Campeche">--Campeche --</option>
+                            <option value="Chiapas">--Chiapas--</option>
+                            <option value="Chihuahua">--Chihuahua--</option>
+                            <option value="Ciudad de México">--Ciudad de México--</option>
+                            <option value="Coahuila">--Coahuila--</option>
+                            <option value="Colima">--Colima--</option>
+                            <option value="Durango">--Durango--</option>
+                            <option value="Estado de México">--Estado de México--</option>
+                            <option value="Guanajuato">--Guanajuato--</option>
+                            <option value="Guerrero">--Guerrero--</option>
+                            <option value="Hidalgo">--Hidalgo--</option>
+                            <option value="Jalisco">--Jalisco--</option>
+                            <option value="Michoacán">--Michoacán--</option>
+                            <option value="Morelos">--Morelos--</option>
+                            <option value="Nayarit">--Nayarit--</option>
+                            <option value="Nuevo León">--Nuevo León--</option>
+                            <option value="Oaxaca">--Oaxaca--</option>
+                            <option value="Puebla">--Puebla--</option>
+                            <option value="Querétaro">--Querétaro--</option>
+                            <option value="Quintana Roo">--Quintana Roo--</option>
+                            <option value="San Luis Potosí">--San Luis Potosí--</option>
+                            <option value="Sinaloa">--Sinaloa--</option>
+                            <option value="Sonora">--Sonora--</option>
+                            <option value="Tabasco">--Tabasco--</option>
+                            <option value="Tamaulipas">--Tamaulipas--</option>
+                            <option value="Tlaxcala">--Tlaxcala--</option>
+                            <option value="Veracruz">--Veracruz--</option>
+                            <option value="Yucatán">--Yucatán--</option>
+                            <option value="Zacatecas">--Zacatecas--</option>
+                          </select>
+                        </div>
+                      </div>
+                    
+                      
+                      <div class="input-box">
+                        <label>Municipio</label>
+                        <input
+                          type="text"
+                          placeholder="Escribe el Municipio"
+                          name="Municipio"
+                           id="Municipio"
+                        />
+                      </div>
+                </div>
+          
+                
+                  <input class="btn-EV" type="submit"  id="button" value="Enviar">
+            </form>
+          </section>
+      </section>
+  
+      <section class="section-two">
+    <div class="email">
+        <div  class="column-2">
+         <div class="column-3">
+            <i class="fa-solid fa-location-dot" style="color: #0032a8;"></i>
+            <p>Apodaca Nuevo León </p>
+         </div>
+         <div class="column-3">
+            <i class="fa-solid fa-phone" style="color: #0032a8;"></i>
+            <a href="https://wa.link/pj9f8k">  <p>81 2466 5789</p> </a>
+        </div>     
+        <div>
+            <p>¡Contáctanos hoy!</p>
+            <p>reclutamiento1@rycefectivo.com</p>
+        </div>
+    </div>
+    </div>        
+   
+      </section>
+  
+      <script type="text/javascript">
+      //javascript for navigation bar effect on scroll
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle('down', window.scrollY > 0);
+  
+          //change logo
+          var logo = document.querySelector(".brand img");
+          if (window.scrollY>0) {
+              logo.setAttribute('src', '../imagen/LogoRYC.png');
+          }else{
+              logo.setAttribute('src', '../imagen/LogoRYC.png');
+          }
+  
+      });
+  
+      //javascript for responsive navigation sidebar menu
+      var menu = document.querySelector('.menu');
+      var menuBtn = document.querySelector('.menu-btn');
+      var closeBtn = document.querySelector('.close-btn');
+  
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+      });
+  
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+      });
+      </script> 
+
+<script src="Envia-email-empleo.js"></script>
+</body>
+</html>
